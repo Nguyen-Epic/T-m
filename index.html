@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.clouflare.com/ajax/libs/font-awesome/5.15.4/css/all/min.css">
+    <title>Kênh Review</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul id="main-menu">
+                    <li><a href="">Nhật Bản</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Anime</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Hành động</a></li>
+                                    <li><a href="">Phiêu Lưu</a></li>
+                                    <li><a href="">Trinh thám</a></li>
+                                    <li><a href="">Tình cảm</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Phim</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li><a href="">Hàn Quốc</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Phim</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Hành động</a></li>
+                                    <li><a href="">Phiêu Lưu</a></li>
+                                    <li><a href="">Trinh thám</a></li>
+                                    <li><a href="">Tình cảm</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                        
+                    <li><a href="">Trung Quốc</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Anime</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Hành động</a></li>
+                                    <li><a href="">Phiêu Lưu</a></li>
+                                    <li><a href="">Trinh thám</a></li>
+                                    <li><a href="">Tình cảm</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Phim</a></li>
+                            <li><a href="">Truyện</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Hành động</a></li>
+                                    <li><a href="">Phiêu Lưu</a></li>
+                                    <li><a href="">Trinh thám</a></li>
+                                    <li><a href="">Tình cảm</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="content"></div> <!-- Phần tử để hiển thị nội dung -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var actionLink = document.querySelector('#main-menu li ul li ul li a');
+            var contentDiv = document.getElementById('content');
+
+            actionLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                contentDiv.innerHTML = '“Attack on Titan” (tên gốc tiếng Nhật là “Shingeki no Kyojin”, có nghĩa là “Người khổng lồ tiến công”) là một bộ manga Nhật Bản do Isayama Hajime sáng tác. Câu chuyện diễn ra trong một thế giới nơi con người phải sống trong ba lớp bức tường thành to lớn để tránh những cuộc tấn công của những người khổng lồ, được gọi là Titan. Truyện theo chân Eren Yeager, nhân vật chính của bộ truyện, người đã thề sẽ tiêu diệt toàn bộ Titan trên thế giới sau khi chứng kiến chúng phá hủy bức tường, tàn phá quê hương và ăn thịt mẹ mình. “Attack on Titan” đã được đăng tải dài kì trên tạp chí Bessatsu Shounen của Kodansha từ tháng 9 năm 2009 đến tháng 4 năm 2021 và được xuất bản thành 34 tập tankōbon. Phiên bản anime chuyển thể được Wit Studio (mùa 1–3) và MAPPA (mùa 4) sản xuất. Bộ truyện đã đạt được thành công lớn về mặt thương mại và đánh giá, với hơn 100 triệu cuốn tankōbon được in trên toàn cầu, giúp bộ truyện trở thành một trong những manga bán chạy nhất mọi thời đại.';
+            });
+        });
+    </script>
+</body>
+
+</html>
